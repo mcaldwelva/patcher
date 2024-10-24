@@ -1,0 +1,5 @@
+Solution to add "Oh no more lemmings (standalone)"
+
+I dumped my original floppy disk with Kryolflux, and found that the EXE size does not match the one in PATCHES.INC. I debugged the standalone EXE with Dosbox-svn to find that the code to bypass the copy protection is similar to your solution. I thus added some code to PATCHER.INC and to the README.md to document this. I hope this helps!
+
+https://github.com/mcaldwelva/Patcher
