@@ -1350,6 +1350,13 @@ Const
                 PLocs: ($3AAAC,0);
                 PTyps: (Ofs(MK),0);
                 PNext: Ofs(pKombat2));
+  pOhNoS    : RPatch = (
+                Ver  : 0;
+                FName: 'VGALEMMI.EXE';
+                FSize: 83114;
+                PLocs: ($419B,0);
+                PTyps: (Ofs(N3),0);
+                PNext: 0);
   pOhNoV    : RPatch = (
                 Ver  : 0;
                 FName: 'VGALEMMI.EXE';
@@ -2023,7 +2030,7 @@ Const
                 PTyps: (Ofs(N2),0);
                 PNext: Ofs(pZanyt));
 
-  Numpats   = 176;
+  Numpats   = 177; {I Lionel: I added Oh No! More Lemmings standalone}
   Titles    : Array [1..Numpats] of Record
                 Title: String[32];
                 Brand: String[27];
@@ -2344,6 +2351,9 @@ Const
              (Title: 'Oh No More Lemmings             ';
               Brand: 'Psygnosis                  ';
               Patch: Ofs(pOhNoT)),
+             (Title: 'Oh No More Lemmings (standalone)';
+              Brand: 'Psygnosis                  ';
+              Patch: Ofs(pOhNoS)),
              (Title: 'One on One                      ';
               Brand: 'Electronic Arts            ';
               Patch: Ofs(p1on1)),
